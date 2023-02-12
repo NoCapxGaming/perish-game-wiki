@@ -34,12 +34,14 @@ a {
 .intro {
   padding: 40px;
   text-align: center;
+  margin-bottom: -4em;
 }
 
 .intro h2 {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #ffc875;
 }
 
 .featured-content {
@@ -89,4 +91,13 @@ a {
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffc875;
+}
+#logo-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: -4em;
+  max-width: 100%;
+  width: 50%;
+  height: auto;
 }
