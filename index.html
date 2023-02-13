@@ -10,21 +10,29 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
   </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script src="js/script.js"></script>
+
 </head>
 
 
 <body>
   <header>
     <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Explore</a>
-      <a href="#">Lore</a>
-      <a href="#">Media</a>
-      <a href="#">About</a>
+      <div class="navbar-toggle" id="toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="#">Home</a></li>
+        <li class="navbar-item"><a href="#">Explore</a></li>
+        <li class="navbar-item"><a href="#">Lore</a></li>
+        <li class="navbar-item"><a href="#">Media</a></li>
+        <li class="navbar-item"><a href="#">About</a></li>
+      </ul>
     </nav>
     <img id="logo-img" src="images/perish_text_logo.png" alt="Perish Text Logo">
   </header>
-
+  
   <main>
     <section class="intro">
       <h2>Welcome to the Official Fan Perish Wiki</h2>

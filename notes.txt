@@ -1,0 +1,87 @@
+<header>
+  <nav class="navbar">
+    <div class="navbar-toggle" id="toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="#">Explore</a></li>
+      <li class="navbar-item"><a href="#">Lore</a></li>
+      <li class="navbar-item"><a href="#">Media</a></li>
+      <li class="navbar-item"><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <img id="logo-img" src="images/perish_text_logo.png" alt="Perish Text Logo">
+</header>
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #3c3c3c;
+}
+
+.navbar a {
+  margin: 0 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.navbar-list {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 10px 0;
+}
+
+@media (min-width: 600px) {
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-item {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const navbarToggle = document.querySelector(".navbar-toggle");
+  const navbarList = document.querySelector(".navbar-list");
+
+  navbarToggle.addEventListener("click", function() {
+  navbarList.classList.toggle("show");
+  });
